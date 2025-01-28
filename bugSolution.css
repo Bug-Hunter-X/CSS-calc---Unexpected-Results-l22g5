@@ -1,0 +1,10 @@
+/* Correct usage of calc() with unit consistency */
+#element {
+  width: calc(100% - 10px);
+}
+/*Inconsistent unit will lead to error */
+#element {
+  width: calc(100% - 10);
+}
+/*Solution:
+Always ensure consistent units within the `calc()` function to avoid unexpected behavior. */
